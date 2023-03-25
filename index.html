@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="image">
+                <div class="odin-container">
+                    <img src="./image/odin-lined.png" alt="odin logo">    
+                </div>
+                ODIN
+            </div>
+            <div class="text-container"><p>Photo by <a href="https://unsplash.com/@minhtriet26">minh triet</a> on <a href="https://unsplash.com/">Unsplash</a></p></div>  
+        </div>
+        <div class="body-container">
+            <form id="my-form" action="#" method="post">
+                <h2>Let's Get Started.</h2>
+                <fieldset>
+                    <label for="first-name">FIRST NAME</label>
+                    <input name="first-name" id="first-name" type="text" required>
+                </fieldset>
+                <fieldset>
+                    <label for="last-name">LAST NAME</label>
+                    <input name="last-name" id="last-name" type="text" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">EMAIL</label>
+                    <input name="email" id="email" type="email" required>
+                </fieldset>
+                <fieldset>
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input name="phone-no" id="phone-number" type="number" required>
+                </fieldset>
+                <fieldset>
+                    <label for="new-password">NEW PASSWORD</label>
+                    <input name="new-password" id="new-password" type="password" pattern="[a-zA-Z0-9]{8,}" required>
+                </fieldset>
+                <fieldset>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input name="confirm-password" id="confirm-password" type="password" pattern="[a-zA-Z0-9]{8,}" required>
+                </fieldset>
+                <button type="submit" form="my-form" value="Submit">Create Account</button>
+                <p>Already have an account?<a href="#">Log in</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
